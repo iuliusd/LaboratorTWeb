@@ -1,0 +1,245 @@
+
+{
+
+box-sizing: border-box;
+}
+body{
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+}
+.container{
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  margin: 50px;
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.container .left_Side{
+  position: relative;
+  background: #003147;
+  padding: 40px;
+}
+
+.profileText{
+  font-family: Bahnschrift,sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.profileText .imgBox{
+  font-family: Bahnschrift, sans-serif;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;;
+  overflow: hidden;
+}
+.profileText .imgBox img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profileText h2{
+
+  color: white;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+.profileText h2 span{
+  font-family: Bahnschrift,sans-serif;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+.contact{
+  padding-top: 40px;
+}
+.title{
+  font-family: Bahnschrift, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.contact ul{
+  display: contents;
+  font-family: Bahnschrift, sans-serif;
+  position: relative;
+}
+.contact ul li{
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.contact ul li .icon{
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+.contact ul li span{
+  color: white;
+  font-weight: 300;
+}
+.contact.education li{
+  margin-bottom: 15px;
+}
+.contact.education h5{
+  font-family: Bahnschrift, sans-serif;
+  color: #03a9f4;
+  font-weight: 500;
+}
+.contact.education h4:nth-child(2){
+  font-family: Bahnschrift, sans-serif;
+  color: white;
+  font-weight: 500;
+}
+.contact.education h4{
+  font-family: Bahnschrift, sans-serif;
+  color: white;
+  font-weight: 350;
+}
+.contact.language .percent{
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #081921;
+  display: block;
+  margin-top: 5px;
+}
+.contact.language .percent div{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+.container .right_Side{
+  position: relative;
+  background: #ffffff;
+  padding: 40px;
+}
+
+.about{
+  margin-bottom: 50px;
+}
+.about:last-child{
+  margin-bottom: 0;
+}
+.title2{
+  font-family: Bahnschrift, sans-serif;
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+p{
+  font-family: Bahnschrift, sans-serif;
+  color: #333;
+}
+.info{
+  color: #003147;
+  font-family: Bahnschrift, sans-serif;
+}
+.text{
+  color: #003147;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-family: Bahnschrift, sans-serif;
+}
+.about .box{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.about .box .info{
+  min-width: 150px;
+}
+.skills .box{
+  color: #003147;
+  font-family: Bahnschrift, sans-serif;
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.skills .box h4{
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.skills .box .percent{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #003147;
+}
+.skills .box .percent div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+.skillsd .box ul{
+  list-style: none;
+  font-weight: 500;
+  color: #003147;
+  font-family: Bahnschrift, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  word-spacing: 1px;
+}
+.skillsd1 .box ul{
+  list-style: none;
+  font-weight: 500;
+  color: #003147;
+  font-family: Bahnschrift, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  word-spacing: 1px;
+  margin: 10px 0;
+}
+.skillsd2 .box ul{
+  list-style: none;
+  font-weight: 500;
+  color: #003147;
+  font-family: Bahnschrift, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  word-spacing: 1px;
+  margin: 10px 0;
+}
+
+.interests ul{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.interests ul li{
+  color: #003147;
+  font-family: Bahnschrift, sans-serif;
+  list-style: none;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
