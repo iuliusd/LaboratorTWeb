@@ -1,11 +1,9 @@
-
 {
-
 box-sizing: border-box;
 }
 body{
   background-color: lightblue;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-content: center;
   min-height: 100vh;
@@ -17,7 +15,7 @@ body{
   min-height: 1000px;
   margin: 50px;
   background: #ffffff;
-  display: grid;
+  display: inline-grid;
   grid-template-columns: 1fr 2fr;
   box-shadow: 0 35px 55px rgba(0,0,0,0.1);
 }
@@ -26,11 +24,10 @@ body{
   background: #003147;
   padding: 40px;
 }
-
 .profileText{
   font-family: Bahnschrift,sans-serif;
   position: relative;
-  display: flex;
+  display: grid;
   flex-direction: column;
   align-items: center;
   padding-bottom: 20px;
@@ -53,7 +50,6 @@ body{
   object-fit: cover;
 }
 .profileText h2{
-
   color: white;
   font-size: 1.5em;
   margin-top: 20px;
@@ -78,9 +74,8 @@ body{
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
-
 .contact ul{
-  display: contents;
+  display: grid;
   font-family: Bahnschrift, sans-serif;
   position: relative;
 }
@@ -127,7 +122,6 @@ body{
   margin-top: 5px;
 }
 .contact.language .percent div{
-
   position: absolute;
   top: 0;
   left: 0;
@@ -139,7 +133,6 @@ body{
   background: #ffffff;
   padding: 40px;
 }
-
 .about{
   margin-bottom: 50px;
 }
@@ -203,7 +196,7 @@ p{
 }
 .skillsd .box ul{
   list-style: none;
-  font-weight: 500;
+  font-weight: 600;
   color: #003147;
   font-family: Bahnschrift, sans-serif;
   display: grid;
@@ -212,17 +205,17 @@ p{
 }
 .skillsd1 .box ul{
   list-style: none;
-  font-weight: 500;
+  font-weight: 600;
   color: #003147;
   font-family: Bahnschrift, sans-serif;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  word-spacing: 1px;
+  word-spacing: 5px;
   margin: 10px 0;
 }
 .skillsd2 .box ul{
   list-style: none;
-  font-weight: 500;
+  font-weight: 600;
   color: #003147;
   font-family: Bahnschrift, sans-serif;
   display: grid;
@@ -230,7 +223,6 @@ p{
   word-spacing: 1px;
   margin: 10px 0;
 }
-
 .interests ul{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -239,7 +231,19 @@ p{
   color: #003147;
   font-family: Bahnschrift, sans-serif;
   list-style: none;
-  font-weight: 500;
+  font-weight: 600;
   margin: 10px 0;
 }
-
+.license ul{
+  display: grid;
+}
+.license ul li{
+  color: #003147;
+  font-family: Bahnschrift, sans-serif;
+  list-style: none;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.license{
+  word-spacing: 1px;
+}
