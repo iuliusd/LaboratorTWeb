@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flags</title>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+  <div class="container">
+    <div class="navheader">
+      <div id="flagtxt" class="text">
+        <p id="name">Flag</p>
+    </div>
+      <button id="reset" class="reset" onclick="refresh()">Reset</button>
+    </div>
+      <div class="container1">
+        <div id="c2" class="container2">
+          <div class="info" id="txt">
+            <h3>Image <br>not loaded</h3>
+          </div>
+            <img id="spainflag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/800px-Bandera_de_Espa%C3%B1a.svg.png"
+                 alt="Image not loaded" style="display: none">
+            <img id="franceflag" src="https://www.orange.ro/images-102019/flags/4x3/fr.30ed2f68dc9a17927643640f48f3d2a858bd041770547035349c6e79713cd84e.svg"
+                alt="Image not loaded" style="display: none">
+            <img id="polandflag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Flag_of_Poland_%28bordered%29.svg/2560px-Flag_of_Poland_%28bordered%29.svg.png"
+                alt="Image not loaded" style="display: none">
+            <img id="chinaflag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/800px-Flag_of_the_People%27s_Republic_of_China.svg.png"
+                alt="Image not loaded" style="display: none">
+            <img id="japanflag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/800px-Flag_of_Japan.svg.png"
+                 alt="Image not loaded" style="display: none">
+        </div>
+
+          <div class="option1">
+          <form action="">
+            <label class="radio">
+              <input type="radio" id="spain" name="radio" onclick="showimage()">
+              <span>Spain</span>
+            </label>
+            <label class="radio">
+              <input type="radio" id="france" name="radio" onclick="showimage1()">
+              <span>France</span>
+            </label>
+            <label class="radio">
+              <input type="radio" id="poland" name="radio" onclick="showimage2()">
+              <span>Poland</span>
+            </label>
+            <label class="radio">
+              <input type="radio" id="china" name="radio" onclick="showimage3()">
+              <span>China</span>
+            </label>
+            <label class="radio">
+              <input type="radio" id="japan" name="radio" onclick="showimage4()">
+              <span>Japan</span>
+            </label>
+          </form>
+      </div>
+
+        <div  id="c3" class="container3">
+          <div class="info" id="txt1">
+            <h3>Image <br>not loaded</h3>
+          </div>
+          <div class="image">
+            <img id="americaflag" src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
+                 alt="Image not loaded" style="display: none">
+            <img id="moldovaflag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Moldova.svg/2560px-Flag_of_Moldova.svg.png"
+                 alt="Image not loaded" style="display: none">
+            <img id="italyflag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/2560px-Flag_of_Italy.svg.png"
+                  alt="Image not loaded" style="display: none">
+            <img id="indiaflag" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"
+                 alt="Image not loaded" style="display: none">
+            <img id="greeceflag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/2560px-Flag_of_Greece.svg.png"
+                 alt="Image not loaded" style="display: none">
+          </div>
+        </div>
+
+        <div class="option2">
+          <form action="">
+            <label class="radio">
+              <input type="radio" id="america" name="radio" onclick="showimage5()">
+              <span>America</span>
+            </label>
+            <label class="radio">
+              <input type="radio" id="moldova" name="radio" onclick="showimage6()">
+              <span>Moldova</span>
+            </label>
+            <label class="radio">
+              <input type="radio" id="italy" name="radio" onclick="showimage7()">
+              <span>Italy</span>
+            </label>
+            <label class="radio">
+              <input type="radio" id="india" name="radio" onclick="showimage8()">
+              <span>India</span>
+            </label>
+            <label class="radio">
+              <input type="radio" id="greece" name="radio" onclick="showimage9()">
+              <span>Greece</span>
+            </label>
+          </form>
+        </div>
+
+        <div id="c4" class="container4">
+          <div class="info" id="txt2">
+            <h3>Image <br>not loaded</h3>
+          </div>
+          <div class="image">
+            <img id="switzerlandflag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Civil_Ensign_of_Switzerland.svg/237px-Civil_Ensign_of_Switzerland.svg.png"
+                 alt="Image not loaded" style="display: none">
+            <img id="belgiumflag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/1182px-Flag_of_Belgium.svg.png"
+                 alt="Image not loaded" style="display: none">
+            <img id="germanyflag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/2560px-Flag_of_Germany.svg.png"
+                 alt="Image not loaded" style="display: none">
+            <img id="irelandflag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_Ireland.svg/2560px-Flag_of_Ireland.svg.png"
+                 alt="Image not loaded" style="display: none">
+            <img id="finlandflag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Finland.svg/800px-Flag_of_Finland.svg.png?20090714053857"
+                 alt="Image not loaded" style="display: none">
+          </div>
+        </div>
+        <div class="option3">
+          <form action="">
+            <label class="radio">
+              <input type="radio" id="switzerland" name="radio" onclick="showimage10()">
+              <span>Switzerland</span>
+            </label>
+            <label class="radio">
+              <input type="radio" id="belgium" name="radio" onclick="showimage11()">
+              <span>Belgium</span>
+            </label>
+            <label class="radio">
+              <input type="radio" id="germany" name="radio" onclick="showimage12()">
+              <span>Germany</span>
+            </label>
+            <label class="radio">
+              <input type="radio" id="ireland" name="radio" onclick="showimage13()">
+              <span>Ireland</span>
+            </label>
+            <label class="radio">
+              <input type="radio" id="finland" name="radio" onclick="showimage14()">
+              <span>Finland</span>
+            </label>
+          </form>
+        </div>
+
+      </div>
+  </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
