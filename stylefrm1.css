@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif, Bahnschrift;
+}
+.container {
+  display: flex;
+  width: 95%;
+  position: center;
+  margin-left: 40px;
+  height: 100%;
+}
+label{
+  margin-top: 8px;
+}
+.text {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+}
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+form div input {
+  width: 50%;
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid #c4c4c4;
+  padding: 0 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+form div {
+  position: center;
+}
+form div i {
+  position: absolute;
+  padding: 10px;
+}
+.button-name {
+  width: 130px;
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px,rgba(45, 35, 66, 0.15) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Bahnschrift, sans-serif;
+  height: 35px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 14px;
+  margin-top: 35px;
+}
+.button-name:focus {
+  box-shadow: #D6D6E7 0 0 0 1px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+.button-name:hover {
+  box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px, rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+.button-name:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+form, .content {
+  width: 100%;
+}
+.txt{
+  position: relative;
+  font-family: Bahnschrift,sans-serif;
+  font-size: 25px;
+  color: black;
+  padding-left: 250px;
+  margin-top: 30px;
+}
+.form{
+  margin-top: -20px;
+}
+.container2, .container3{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 270px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  border: 2px solid #c4c4c4;
+  padding: 0 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.container3{
+  margin-top: 35px;
+  height: 430px;
+}
+.ed1, .job1, .job{
+  margin-top: 10px;
+}
+.info{
+  width: 100%;
+}
+.present{
+  font-size: 10px;
+}
+.chbox{
+  margin-top: 10px;
+  width: 10px;
+  height: 10px;
+}
+.present, .chbox{
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.present, .chbox:hover{
+  cursor: pointer;
+}
+.dropdown{
+  display: flex;
+  margin-top: 15px;
+  border-color: #999999;
+}
+.dropdown-content{
+  display: flex;
+  margin-top: -12px;
+  width: 619px;
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid #c4c4c4;
+  padding: 0 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.error-text {
+  font-family: Bahnschrift, sans-serif;
+  margin-left: 30px;
+  color: red;
+  font-size: 12px;
+}
+.dropdown1, .dropdwn{
+  display: flex;
+  width: 619px;
+}
+.dropdwn{
+  height: 40px;
+  border-radius: 8px;
+}
+.dropdown-content1{
+  width: 50%;
+  border-radius: 8px;
+  border: 2px solid #c4c4c4;
+  padding: 0 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  height: 40px;
+}
+.save{
+  width: 42px;
+  height: 20px;
+  display: flex;
+  margin-top: 8px;
+  color: black;
+  font-size: 15px;
+  margin-left: 15px;
+  position: relative;
+  padding-bottom: 20px;
+}
+.save:hover{
+  cursor: pointer;
+  color: #555555;
+  font-size: 16px;
+}
+.error-text{
+  margin-left: 8px;
+}
+.dropdown-content2{
+  width: 50%;
+}
+.plus{
+  margin-top: -31px;
+  margin-left: 68px;
+}
+.job{
+  margin-top: 3px;
+}
+.plus:hover{
+  color: #555555;
+  cursor: pointer;
+}
+.container2{
+  height: 260px;
+  margin-top: 38px;
+}
+.edinfo{
+  margin-top: 34px;
+  font-size: 12px;
+  margin-left: 25px;
+}
+.link{
+  margin-top: 40px;
+}

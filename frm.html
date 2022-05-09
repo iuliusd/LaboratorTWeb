@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="stylefrm1.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous"/>
+  <title>Registration Form</title>
+</head>
+<body>
+  <div class="txt">Registration Form</div>
+  <div class="container">
+
+    <form id="form" class="form" >
+      <div>
+        <label for="username">First / Last Name</label>
+        <i class="fa fa-user"></i>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Your Name"/>
+      <div class="error-text" id="usernameError"></div>
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <i class="fa fa-envelope"></i>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="example@gmail.com"/>
+        <div class="error-text" id="emailError"></div>
+      </div>
+
+      <div>
+        <label for="phone">Phone</label>
+        <i class="fa fa-phone"></i>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="Phone number here (+373) ..."
+          pattern="+[0-9]{3}-[0-9]{2}-[0-9]{3}"/>
+        <div class="error-text" id="phoneError"></div>
+      </div>
+
+      <div>
+        <label for="address">Physcal Address</label>
+        <i class="fa fa-home"></i>
+        <input
+          type="text"
+          name="address"
+          id="address"
+          placeholder="Address here"/>
+      </div>
+
+      <div>
+        <label for="profession">Profession</label>
+        <div class="dropdown2" >
+      <div onclick="dropdwn()" class="dropbtn1">
+        <select id="profession"  class="dropdown-content1">
+        <option value="" selected disabled>Select a option</option>
+        </select>
+      </div>
+      </div>
+
+      </div>
+
+      <div class="sociallinks">
+      <div>
+        <label class="add">Social Links</label>
+        <i class="fa fa-link"></i>
+        <input
+          type="url"
+          name="links"
+          id="links"
+          placeholder="https://example.com"/>
+
+        <div class="error-text" id="linkError"></div>
+      </div>
+      </div>
+
+      <div class="education">
+        <div>
+          <label class="add">Education</label>
+          <div class="plus" id="plus"><i class="fa fa-plus" ></i></div>
+          <div class="edinfo"></div>
+          <div id="edinfo" class="edinfo"></div>
+
+          <div class="container2" id="container2" style="display: none">
+            <div class="ed1">
+              <label for="institution">Institution</label>
+              <i class="fa fa-university"></i>
+              <input
+                type="text"
+                name="institution"
+                id="institution"
+                class="info"
+                placeholder="Institution name"/>
+              <div class="error-text" id="institutionError"></div>
+
+              <label for="date">Graduation date</label>
+              <input
+                type="date"
+                name="date"
+                id="date"
+                class="info"/>
+              <div class="error-text" id="graduationError"></div>
+             <div class="edtype">
+              <label for="edtype">Education type</label>
+
+              <div class="dropdown" id="edtype">
+                <div onclick="dropdwn()" class="dropbtn"></div>
+                <br><select id="education" class="dropdown-content">
+                <option value="" selected disabled>Select a option</option>
+                </select>
+              </div>
+               <div class="error-text" id="educationError"></div>
+             </div>
+
+              <div class="save" id="save"> Save</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="job" id="job">
+        <div>
+          <label>Jobs</label>
+          <div class="plus" id="plus1"><i class="fa fa-plus" ></i></div>
+          <div class="container3" id="container3" style="display: none">
+            <div class="job1">
+              <label for="jobname">Job name</label>
+              <div onclick="dropdwn()" class="dropbtn"></div>
+              <br><select id="jobname" class="dropdown-content">
+              <option value="" selected disabled>Select a option</option>
+            </select>
+              <div class="error-text" id="jobError"></div>
+              <label for="startdate">Start date</label>
+              <input
+                type="date"
+                name="startdate"
+                id="startdate"
+                class="info"/>
+              <div class="error-text" id="startdateError"></div>
+
+              <label for="enddate">End date</label>
+              <input
+                type="date"
+                name="enddate"
+                id="enddate"
+                class="info"/>
+              <div class="error-text" id="enddateError"></div>
+              <div class="present">
+              In present
+              <input
+                type="checkbox"
+                name="chbox"
+                id="chbox"
+                class="chbox">
+            </div>
+
+            <div class="cityname">
+              <label for="cityname">City / District</label>
+              <div class="dropdown" id="cityname">
+                <div onclick="dropdwn()" class="dropbtn"></div>
+                <br><select class="dropdown-content" id="city1">
+                <option value="" disabled selected class="select">Select a option</option>
+                <option value="chisinau">Chișinău</option>
+                <option value="balti">Bălți</option>
+                <option value="orhei">Orhei</option>
+                <option value="tiraspol">Tiraspol</option>
+                <option value="soroca">Soroca</option>
+                <option value="nisporeni">Nisporeni</option>
+                <option value="bender">Bender</option>
+              </select>
+              </div>
+              <div class="error-text" id="cityError"></div>
+            </div>
+
+              <label for="companyname">Company name</label>
+              <div class="dropdown" id="company">
+                <div onclick="dropdwn()" class="dropbtn"></div>
+                <br><select class="dropdown-content" id="companyname">
+                <option value="" disabled  selected class="select" >Select a option</option>
+              </select>
+              </div>
+              <div class="error-text" id="companyError"></div>
+              <div class="save" id="save1"> Save</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button  type="button" id="submit" class="button-name">Save my profile</button>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="actions.js"></script>
+
+</body>
+</html>
