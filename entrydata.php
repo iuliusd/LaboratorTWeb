@@ -14,7 +14,6 @@ if (isset($_POST['save'])){
     $phone=$_POST['phone'];
     $address=$_POST['address'];
 
-
     $sql_querry="INSERT INTO entrydata (name ,email, phone, address)
 values ('$name','$email','$phone','$address')";
     if (mysqli_query($connection,$sql_querry)){
